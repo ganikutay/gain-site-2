@@ -1,0 +1,268 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet"> <!-- EMOJI KUTUPHANE -->
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+    <title>Gain Site</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+    
+
+    <style>
+    
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+
+    <!-- SOSYAL MEDYA ICONLARI -->
+    
+    <div class="sosyal-medya">
+        <div class="twitter-icon">
+            <a id="twitter-i" href=""><i class="fab fa-twitter"></i></a> <!-- BURADA a kismi ile renk degistiremedim, hoveri da etkileyemedim neden?(class ile, id ile degistirebildim) ustteki classlarla da degistiremedim?-->
+        </div>
+        <div class="telegram-icon">
+            <a id="telegram-i" href=""><i class="fab fa-telegram"></i></a>
+        </div>
+    </div>
+    <!--------------------------------------------------------------------->
+
+
+
+
+
+    <!--WALLET CONNECT-->
+
+    <input id="ConnectID" type="submit" value="Connect">
+
+    <!--HEADER-->
+    <div id="header">
+
+        <div id="logo-div">
+            <!-- LOGO -->
+            <img id="anasayfa-logo" src="gain logo.svg" alt="logo not found">
+
+        </div>
+
+        <div id="text-div">
+            <!-- H1 -->
+            <h1>GAIN SITE </h1>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------->
+
+
+
+
+
+
+    <!-- KUCUK SOL LOGO ve FIYAT ve BSC-->
+    <a id="logo" style="text-decoration: none;" href="">
+        <img width="50px" src="gain logo.svg" alt="not found">
+    </a>
+
+    <a id="gaincoinfiyat" href="#"> 40.07$ </a>
+
+
+    <a id="gaincoin" href="#">Gain Coin</a>
+
+
+    
+    <a style="text-decoration: none;" href="https://bscscan.com">
+        <p id="bsc">BSC  <!--renk yazinin oldugu class veya id de degistirilebilir.-->
+            <i class="fas fa-coins"></i>
+        </p>
+    </a>
+    
+
+
+    <!--h3 h1 falan koydugumuz da hep sayfanin soluna atiyor normal yazidan cikip baslik moduna giriyor-->
+
+
+<!-------------------TAGS------------------>
+
+    <div class="all-tag">
+        <ul class="tags saga-itilen-tags">
+            <li><a href="">Coin Oylama</a></li>
+            <li><a href="">Reklam</a></li>
+
+        </ul>
+        <br><br>
+        <ul class="tags">
+
+            <li><a href="">Buy GainCoin</a></li>
+            <li><a href="">Trade </a></li>
+        </ul>
+        <br>
+    </div>
+
+
+
+    <hr width="96%">
+
+
+ 
+
+
+
+
+
+
+
+
+     <!----------- SEARCH text ------->
+    <form id="text-form">
+        <input type="text" id="text" placeholder="Token Name & Adress..">
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+
+    <!-----------SEARCH BUTTON------->
+    <form>
+        <input type="submit" id="submit" value="Search"> <!-- onceden type="submit" idi-->
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+   <!-- MENU CUBUGU - ACILIR KAPANIR-->
+
+
+   <div class="nav">
+
+    <div class="container">
+
+        <ul>
+
+            <li><a id="fa-wallet" href=""><i class="fas fa-wallet"></i></a></li>
+
+            <li><a id="fa-home" href=""><i class="fas fa-home"></i></a></li>
+
+            <li><a id="fa-list-alt" href=""><i class="far fa-list-alt"></i></a></li>
+                
+            <li><a id="fa-chart-line" href=""><i class="fas fa-chart-line"></i></a></li>
+
+            <li>
+                <a id="fa-btc" href="https://www.binance.com/tr/trade/BTC_USDT?layout=pro&type=spot"><i class="fab fa-btc"></i></a>
+                <ul class="hidden">
+                    <li class="btc-alt-liste"><a href="">BTC AL</a></li>
+                    <li class="btc-alt-liste"><a href="">ETH AL</a></li>
+                    <li class="btc-alt-liste"><a href="">GACO AL</a></li>
+                </ul>
+            </li>
+            
+
+        </ul>
+        
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+ 
+
+
+<!-------------------------- TRADING VIEW ---------------------------------->
+
+
+<!-- IFRAME OLARAK ARATTIM INTERNETTE-->
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+        <div id="tradingview_79a5b"></div>
+        <div class="tradingview-widget-copyright">TradingView'den <a href="https://tr.tradingview.com/symbols/BTCUSDT/?exchange=BITBAY" rel="noopener" target="_blank"><span class="blue-text">BTCUSDT Grafiği</span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+        new TradingView.widget
+        (
+        {
+            "width": 920,/*980*/
+            "height": 550,/*610*/
+            "symbol": "BITBAY:BTCUSDT",
+            "interval": "D",
+            "timezone": "Etc/UTC",
+            "theme": "dark",
+            "style": "1",
+            "locale": "tr",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "allow_symbol_change": true,
+            "container_id": "tradingview_79a5b"
+        }
+        );
+        </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------- CONTACT US ----------------->
+
+<footer id="contact">
+    <h2>
+        CONTACT US
+    </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+</footer>
+
+
+
+
+
+</body>
+
+</html>

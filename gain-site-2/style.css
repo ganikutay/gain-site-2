@@ -1,0 +1,605 @@
+/* BODY */
+body{
+    background:#49517c;
+    margin: 0;
+    padding: 0;
+}
+
+#header{  /* yazi ve logoyu beraber hareket ettirir */
+    height: 10px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* BASLIK HEADER 1 */
+h1{               
+
+    /*padding-bottom: 15px; /* H1 ve ANASAYFA-LOGO da paddingler verdik, birinde alt birinde ust ve normal hizaya geldiler, aksi taktirde biri yukarda biri asagida kaliyordu ve marginle duzeltemedim.*/
+    /*background-color: blue;*/
+    width: 250px; 
+    margin: 0;   
+}
+
+
+h1::first-letter{
+    font-size: 70px;
+}
+
+
+/* anasayfa-logo     ANASAYFA LOGO   */
+#anasayfa-logo{
+    
+    width: 80px;
+    padding-top: 15px;
+    clear: both; /*?????*/
+    
+    position: absolute; /* #anasayfa-logo alttaki #text-div i kapsadigi icin. Burayi ABSOLUTE yapiyoruz. Yani alttaki #text-div buraya gore konumlanacaktir!!!*/
+}
+
+
+#logo-div{
+    display: inline-block;
+    width: auto;
+    height: 140px;
+   
+}
+
+
+#text-div{
+    display: inline-block;
+    width: auto;
+    
+    position: relative;     /* #anasayfa-logo tarafinda aciklamasini yaptim!!!*/
+    left: 70px;
+    bottom: 50px;
+   
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+/* SOLDAKI KUCUK LOGO  */
+#logo{
+    /*background-image: url('gain-logo.png');*/
+    width: 50px;
+    height: 60px;
+    margin-left: 30px;
+    
+
+    
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    transition: 0.6s;
+}
+
+/* logo HOVER */
+#logo:hover{
+    /*background-image: url('gain-logo-tersi.png');
+    width: "35px";
+    margin-left: 40px;
+    position: absolute;
+    top: 40px;*/
+    filter:invert(100%); /* Renkleri tersine cevirme */
+    transition: 0.6s;
+}
+
+
+
+
+
+/* gaincoinfiyat NORMAL */
+#gaincoinfiyat{
+    color: green;
+    
+    height: 50px;
+    padding-top: 12.5px;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 15px; 
+    position: absolute;
+    top: 46px;
+    left: 80px;
+
+    border-left: 2px solid white;
+    border-radius: 1px;
+    padding-left: 5px;
+
+    transition: 0.6s;
+}
+
+/* gaincoinfiyat HOVER */
+#gaincoinfiyat:hover{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 15px; 
+    position: absolute;
+    top: 46px;
+    left: 80px;
+    transition: 0.6s;
+}
+
+
+
+
+
+
+/* gaincoin NORMAL */
+#gaincoin{
+    color: black;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 1px; 
+    position: absolute;
+    top: 46px;
+    left: 173px;
+    
+    border-right: 2px solid white;
+    border-radius: 1px;
+    
+    /*background-color: violet;*/
+    width: 60px;
+    transition: 0.6s;
+}
+
+/* gaincoin HOVER */
+#gaincoin:hover{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 1px; 
+    position: absolute;
+    top: 46px;
+    left: 173px;
+    transition: 0.6s;
+}
+
+
+#bsc{
+    /*color: black;*/
+    /*background-color: violet;*/
+    display: inline;
+    clear: both;
+    color: rgb(245, 188, 3) ;/* !importent koyuldugunda hover verilmiyor ,calismiyor*/
+    font-weight: 700;
+    font-size: 35px;
+    text-decoration: none;
+    margin-left: 5px; 
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    top: 55px;
+    left: 240px;
+    width: 130px;
+    transition: 0.6s; /* SADECE HOVER A DEGIL BURAYADA EKLEMELIYIZ!!!!!!*/
+}
+
+#bsc:hover{
+    transition: 0.6s; /* normal yazilarda box-shadow yazmiyoruz!!!!!!*/
+    color: rgb(132, 0, 255);
+}
+
+/*------------SOSYAL MEDYA----------------------*/
+
+    .sosyal-medya{
+        float: right;
+        margin-right: 3%;
+        text-decoration: none;
+        font-size: 27px;  
+    }
+
+    .twitter-icon{
+    margin: 10px 5px;
+    display: inline-block;
+    }
+
+    .telegram-icon{
+        margin: 10px 5px;
+        display: inline-block;
+    }
+
+    #twitter-i{
+        color: rgb(41, 187, 255);
+        transition: 0.6s;
+    
+    }
+    
+    #telegram-i{
+        color: rgb(41, 187, 255);
+        transition: 0.6s;
+    
+    }
+
+    #twitter-i:hover{
+        color: whitesmoke;
+        transition: 0.6s;
+
+    }
+
+    #telegram-i:hover{
+        color: whitesmoke;
+        transition: 0.6s;
+
+    }
+
+
+
+/*------------------ CONNECT ---------------------*/
+
+    /* Connect butonumuzu ayarliyoruz*/
+    #ConnectID{
+	width: 80px;
+    float: right; /*butonu sayfanin sag tarafina yolladik*/
+    
+    font-size: 15px;
+    background-color: rgb(12, 116, 29);
+    color: white;
+    padding: 10px 10px;
+    /*margin: 7px 0;*/
+    margin-top: 20px;
+    margin-right: 3%; /*sagdan % 8 uzaklastirdim.Sayfa buyusede kuculsede*/
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+
+    transition: 0.6s;
+    transition: box-shadow 0.6s;
+    }
+
+
+    /* Connect butonuna hover olayı gerçekleştirğinde arkaplan rengini degistiriyoruz */
+    #ConnectID:hover{
+        background-color: rgb(43, 192, 55);
+        /*color: rgb(49, 133, 182);*/
+
+        width: 80px;
+        font-size: 15px;
+
+
+        transition: 0.6s;
+        transition: box-shadow 0.6s;
+        /*transition-timing-function: ease;     pek bi ise yaramadi*/
+
+        /*box-shadow: 0px 10px 20px 2px rgba(0,0,0,0.1) ,10px 0px 20px 2px rgba(0,0,0,0.1), 0px -10px 20px -2px rgba(0,0,0,0.1), -10px 0px 20px -2px rgba(0,0,0,0.1); 
+    */
+        box-shadow: 0px 10px 20px 2px rgba(52, 231, 133, 0.1) ,10px 0px 20px 2px rgba(52, 231, 133, 0.1), 0px -10px 20px -2px rgba(52, 231, 133, 0.1), -10px 0px 20px -2px rgba(52, 231, 133, 0.1); 
+
+    
+    }
+
+
+    
+
+
+
+
+    /*------------ TAGS ------------*/
+
+
+
+
+    .all-tag{
+        /*background-color: rgb(229, 211, 151);*/
+        border-radius: 4px;
+        width: 300px;
+        height: 100px;
+        float: right;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        /*position: relative; /*Bulundugu konumdan itibaren degistirmek icin kullaniyoruz.*/
+        /*top: 0; 
+        right: 0px; */
+    }
+
+    .tags{                /* toplu olarak hareketlerini ayarlayabiliriz*/
+        
+        margin: 0;
+        margin-right: 25px;
+        padding: 0;
+        /*margin-left: 50px;*/
+        margin-top: 0;
+        float: right;
+        position: relative;
+        top: 15px;       
+    } 
+    
+    .tags li{
+        list-style: none;
+        display: inline;
+        margin-right: 5px;
+        margin-top: -20px;
+        
+    }
+    
+    .tags li a{           /* teker teker a larin marginlerini vb ayarlayabiliriz*/
+        color: rgb(24, 24, 179);
+        font-weight: 800;
+        font-size: 22px;
+        text-decoration: none;
+        margin-right: 15px;
+        
+        transition: 0.6s;
+    }
+
+    .tags li a:hover{
+        color: rgb(132, 0, 255);
+        font-weight: 800;
+        font-size: 22px;
+        text-decoration: none;
+        
+        transition: 0.6s;
+    }
+
+
+/* ------------- TRAIDING VIEW ------------*/
+    .tradingview-widget-container{
+        float: left;
+        margin: 20px 20px;
+        position: relative;
+        top: -20px;
+    }
+    
+
+
+/* -------------- HR ------------------*/
+
+
+    hr{
+        margin-top: 15px;
+    }
+
+/*------------------ SEARCH TEXT -----------*/
+input[type="text"]{ 
+    margin-top: 10px;
+    margin-right:20px;
+    margin-left: 20px;
+    cursor: text;
+
+    width: 440px;
+    height: 50px;
+    border: 1px solid #e9ecef;
+    
+    border-radius: 4px;
+    padding: 8px 50px;/* yazinin ust alt ve sag sol padding i*/
+    background-color: rgb(217, 221, 255);
+    background-image: url(search-solid.svg);
+    
+    background-repeat: no-repeat;
+}
+
+#text{
+    float: right;
+	letter-spacing: 4px;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+input[type="text"]:focus{
+    outline: 0;
+    border-color: rgb(20, 63, 121);
+    border-width: 2.5px;
+    background-color: rgb(111, 169, 245);
+}
+
+
+
+
+/*------------------ SEARCH BUTON ---------------*/
+
+/*SEARCH butonumuzu ayarliyoruz*/
+input[type="submit"]{
+	width: 440px;
+    height: 50px;
+    background-color: rgb(20, 63, 121);
+    color: white;
+    padding: 12px 18px;
+    margin: 17px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+/*searchbutonuna hover olayı gerçekleştirğinde arkaplan rengini degistiriyoruz */
+input[type="submit"]:hover{
+	background-color: rgb(55, 107, 175);
+    
+    /*color: rgb(49, 133, 182);*/
+
+    transition: box-shadow 0.3s;
+    box-shadow: 0px 10px 20px 2px rgba(255, 255, 255, 0.1) ,10px 0px 20px 2px rgba(255, 255, 255, 0.1), 0px -10px 20px -2px rgba(255, 255, 255, 0.1), -10px 0px 20px -2px rgba(255, 255, 255, 0.1); 
+
+}
+
+/* Search'e ait elemanlarin harf aralığını arttır ve harfleri kalinlastirir */
+#submit{
+    float: right;
+	letter-spacing: 4px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+    /*------------ CONTAINER VE NAV --------------*/
+
+    .container{
+        float: right;
+        width: 120px;
+        height: 370px;
+        margin-right: 20px;
+    }
+
+    .nav .container{
+        //background-color: rgb(10, 6, 243);
+        
+    }
+
+    .nav .container ul{
+        padding-left: 20;
+    }
+    
+    .nav .container ul li{
+        /*margin: 25px 0;*/
+        margin-bottom: 25px;
+        list-style: none;
+    }
+
+    .nav .container ul li a{
+        text-decoration: none;
+        color: black;
+
+        transition: 0.6s;  
+    }
+
+/*
+    .nav .container ul li a:hover{
+        text-decoration: none;
+        color: whitesmoke;
+        
+        transition: 0.6s;
+    }
+*/
+    #fa-wallet:hover{
+        text-decoration: none;
+        color: rgb(7, 209, 34);
+        
+        transition: 0.4s;
+    }
+
+    #fa-home:hover{
+        text-decoration: none;
+        color: whitesmoke;
+        
+        transition: 0.4s;
+    }
+
+    #fa-list-alt:hover{
+        text-decoration: none;
+        color: whitesmoke;
+        
+        transition: 0.4s;
+    }
+
+    #fa-chart-line:hover{
+        text-decoration: none;
+        color: rgb(7, 209, 34);
+        
+        transition: 0.4s;
+    }
+
+    #fa-btc:hover{
+        text-decoration: none;
+        color: rgb(245, 188, 3);
+        
+        transition: 0.4s;
+    }
+
+    .nav .container ul li a i{
+        
+        font-size: 45px;
+        font-weight: 800;
+        
+    }
+
+    .nav .container ul ul li{
+        font-size: 22px;
+        font-weight: 800;
+        
+        position: relative;
+        top: -95px;
+        right: 110px;
+        /*background-color: whitesmoke;*/
+        text-align: center;
+        margin: 0;
+    }
+
+    .nav .container ul ul:hover li a{
+        background-color: rgb(199, 188, 186);
+        transition: 0.6s;
+    } 
+
+    .nav .container ul ul li:hover a{
+        background-color: tomato;
+    
+    } 
+
+    li:hover ul a{
+        background-color: turquoise;
+        
+    
+    }
+
+    ul li ul{ /*displayi kapadik, asagida acicaz*/
+        display: none;
+    }
+
+    ul li a:hover+ .hidden,.hidden:hover{ /* + hidden yaparak fark yaratiriz. hidden class indan onceki ilk a etiketi demek istiyoruz. Ancak hemen menu kapaniyor o yuzden virgun koyup hidden olayinda da hover olmasini istiyoruz ve belirtiyoruz*/
+        display: block;
+    }
+
+    ul li ul li{
+        margin-bottom: 0;
+        padding: 0;
+        width: 90px;
+        height: 50px;
+        background-color: yellow;
+        
+    }
+    
+  
+
+
+
+
+
+
+/*---------- CONTACT US ------------*/
+
+#contact{
+     
+ 
+}
+
+h2{
+ margin: 0;
+}
+
+
+
+/* paragraflari ince bir cizgiyle bolme ornegi
+#deneme-coin{
+    float: left;
+    column-count: 2;
+    column-rule-style: solid;
+    column-rule-color: white;
+    column-rule-width: 1px;
+
+}
+*/
